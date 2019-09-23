@@ -1,0 +1,3 @@
+#IgnoreFolder NodeModules
+api/node_modules
+mercadolibre/node_modules

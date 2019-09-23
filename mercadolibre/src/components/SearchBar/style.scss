@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    .navBar {
+        width: 100%;
+        background: #fff159;
+        height: 60px;
+        
+        .navBarSearchBar{
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+
+            .navbar-logo{
+                float: left;
+                width: 134px;
+                height: 34px;
+                margin-right: 16px;
+            }
+            
+            .navSearchBtn {
+                float: left;
+                width: 10%;
+                height: 39px;
+                padding: 10px;
+                background: #f3f3f3;
+                color: gray;
+                font-size: 17px;
+                border: 0 rgba(0,0,0,.2);
+                border-left:rgba(0,0,0,.7);
+                border-radius: 0 2px 2px 0;
+                cursor: pointer;
+                
+                a{
+                    width: 100%;
+                    color: gray;
+                    z-index: 10;
+                }
+            }
+            
+            .navSearchBtn:hover,  .navSearchBtn:focus {
+                border: none;
+            }
+
+            .navSearchBar { 
+                float:left;
+                height: 39px;
+                padding: 10px;
+                border: 0 rgba(0,0,0,.2);
+                border-radius: 2px 0 0 2px;
+                width: calc(100% - 10% - 150px);
+            }
+        }
+    }
+  }

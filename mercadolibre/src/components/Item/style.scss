@@ -1,0 +1,103 @@
+body {
+    background: #eeeeee;
+    box-sizing: border-box;
+
+    .item-data-cont{
+        width: 60%;
+        margin:auto;
+        background: white;
+        margin-top: 15px;
+        height: auto;
+        border-radius: 2px 2px 2px 2px;
+        margin-bottom: 30px;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
+        border-radius: 4px;
+
+        .item-data-picture{
+            display: inline-block;
+            width: 70%;
+            float: left;
+            
+            img {
+                width: 80%;
+                height: 80%;
+                margin: auto;
+                margin-top: 5%;
+                margin-left: 5%;
+            }
+        }
+
+        .item-data { 
+            display: inline-block;
+            padding-top: 15px;
+            float: left;
+            width: 30%;
+            padding: 32px;
+
+            .item-data-condition{
+                font-size: 14px;
+            }
+
+            .item-result-title{
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 1.05;
+            }
+
+            .item-price{
+                font-weight: 300;
+                font-size: 40px;
+                margin-bottom: 45px;
+
+                .item-price-decimals{
+                    font-size: 20px;
+                    line-height: 1.8;
+                    margin-left: .05em;
+                    position: relative;
+                    top: -14px;
+                }
+            }
+
+            p {
+                padding: 5px;
+                margin: 5px;
+            }
+
+            button {
+                width: 100%;
+                color: #fff;
+                background: #3483fa;
+                font-size: 15px;
+                height: 45px;
+                padding: 12px 16px;
+                border: none;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+        }
+
+        .item-data-description{
+            display: inline-block;
+            padding: 20px;
+            width: 70%;
+            
+            p{
+                text-align: justify;
+            }
+        }
+
+    }
+
+    .breadcrum {
+        width: 60%;
+        margin:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #999;
+        font-size: 14px !important;
+
+        ol > li > p {
+            font-size: 14px !important;
+        }
+    }
+}

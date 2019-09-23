@@ -16,7 +16,6 @@ class itemContainer extends Component {
     }
 
     Fetch = () => {
-        console.log(this.props);
         const { id } = this.props.match.params;
         const url = itemSearchUrl + id;
 

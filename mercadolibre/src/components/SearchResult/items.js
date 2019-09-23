@@ -1,10 +1,9 @@
 import React from 'react';
-import { item } from '../../const/apiInfo';
 import ItemDiv from './itemDiv';
 
 const mappingItems = items => {
     return items.map((item) => (
-        <ItemDiv item={item}></ItemDiv>
+        <ItemDiv item={item} key={item.id}></ItemDiv>
     ));
 }
 

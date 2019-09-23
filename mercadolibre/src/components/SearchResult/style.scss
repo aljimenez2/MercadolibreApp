@@ -38,6 +38,7 @@ body {
                 height: 100%;
                 padding: 21px 0 16px 0;
                 cursor: pointer;
+                width: calc(100% - 160px - 48px);
 
                 .price{
                     color: #333;
@@ -53,6 +54,11 @@ body {
 
                 .item-result-title{
                     font-size: 20px;
+                    width: 67%;
+                    text-overflow:ellipsis;
+                    height: 30px;
+                    overflow:hidden;
+                    white-space:nowrap
                 }
             }
         }

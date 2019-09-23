@@ -15,11 +15,9 @@ class ItemView extends Component {
 
     render() {
         const { item } = this.props;
-        
-        console.log(item);
         return (
             <div className="item-data-cont">
-                <PictureItem picture={item.picture}></PictureItem>
+                <PictureItem picture={item.picture} title={item.title}></PictureItem>
                 <ItemData item={item}></ItemData>
                 <ItemDescription description={item.description}></ItemDescription>
             </div>

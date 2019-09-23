@@ -7,7 +7,7 @@ import './style.scss'
 
 const mappingCategories = ( categories ) => {
     if(categories){
-        return categories.map( category => (<Typography> { category } </Typography>));
+        return categories.map( category => (<Typography key={category}> { category } </Typography>));
     }
 }
 

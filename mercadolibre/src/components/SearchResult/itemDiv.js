@@ -21,15 +21,13 @@ class ItemDiv extends Component {
         const { item } = this.props;
         const redirect = `/item/${item.id}`;
 
-        console.log(item.picture);
-
         if (this.state.redirect) {
             return <Redirect push to={redirect} />;
         }
 
         return (
             <div key={item.id} onClick={this.handleOnClick} className="singular-item-result">
-                <PictureItem picture={item.picture}></PictureItem>
+                <PictureItem picture={item.picture} title={item.title}></PictureItem>
                 <ItemData item={item}></ItemData>
             </div>
         );

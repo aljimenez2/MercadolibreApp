@@ -2,10 +2,10 @@ import React from 'react';
 import Dict from './../../../dictionary/es';
 import NumberFormat from 'react-number-format';
 
-export const PictureItem = ({ picture }) => {
+export const PictureItem = ({ picture, title }) => {
     return (
         <div className="item-data-picture">
-            <img src={picture} />
+            <img src={picture} alt={title} />
         </div>
     )
 }

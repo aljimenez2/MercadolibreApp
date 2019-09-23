@@ -1,6 +1,7 @@
 ## Available Scripts
 
-In the project directory Mercadolibre and Api, you can run:
+In the project directory Mercadolibre and Api
+Go inside each folder and run:
 
 ### `npm install`
 

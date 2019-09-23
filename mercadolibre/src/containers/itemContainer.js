@@ -8,7 +8,8 @@ class itemContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            item: null
+            item: null,
+            categories : null
         }
     }
     componentDidMount() {
@@ -23,17 +24,18 @@ class itemContainer extends Component {
         .then(res => res.json())
         .then(data => {
             this.setState({
-                item: data.item
+                item: data.item,
+                categories : data.categories
             })
         });
     }
 
     render() {
-        const { item } = this.state;
+        const { item, categories } = this.state;
         return (
         <div>
             <SearchContainer></SearchContainer>  
-            {item && <ItemView item={item}></ItemView>}
+            {item && <ItemView item={item} categories={categories}></ItemView>}
         </div>
         )
     }

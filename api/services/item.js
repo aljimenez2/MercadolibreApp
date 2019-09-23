@@ -1,11 +1,13 @@
 const authorArray = require('./author');
 
-function buildResponseItem(item, description){
+function buildResponseItem(item, description, categories){
     var _author = authorArray('Alejandro', 'Jimenez');
     var _description = descriptionText(description);
     var _item = itemArray(item, _description);
+    var _categories = categoriesArray(categories);
     return {
         author: _author,
+        categories: _categories,
         item: _item
     }
 }
@@ -31,6 +33,14 @@ function itemArray(item, description){
 
 function descriptionText(description){
     return description.plain_text;
+}
+
+function categoriesArray(categories){
+    _categories = [];
+    categories.forEach(function(value){
+        _categories.push(value.name);
+    });
+    return _categories;
 }
 
 function splitNumber(number){
